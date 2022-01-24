@@ -1,0 +1,36 @@
+Artista: Toto la momposina.
+
+Opciones:
+- Realizar la pagina todo en uno y dividirlo por secciones o
+- Realizar la pagina utilizando deferentes html para las secciones?
+
+Contenido:
+- Index: Un resumen de su vida, (cosas que se podrian poner tambien, para derivar 
+al usuario a las diferentes secciones, esto seria en partes pequeñas por si el usuario esta interesado en conocer algo más de la artista).
+historia llamativa,
+noticia importante,
+video musical mas exitoso.
+
+- Historia: Su vida mas extensa.
+- Noticias.
+- Galeria: Videos musicales, imagenes.
+- Contacto.
+
+Tareas que se pueden realizar en avances:
+
+(recomendable que uno se encargue y muestre avances para realizacion de cambios).
+- Diseño de la pagina.
+
+(de 1 a 2 personas)
+- Sacar contenido para la seccion index (recordar que en esta parte son resumenes y lo mas llamativo de cada seccion para que el usuario pueda interactuar con lo demas).
+- Sacar contenido para la seccion historia.
+- Sacar contenido para la seccion galeria (imagenes y videos).
+- Sacar contenido para la seccion contacto.
+
+(de 1 a 2 personas)
+- Estructurar html.
+- Insertar contenido obtenido.
+
+(de 1 a 3 personas)
+- realizacion de css.
+- realizacion de animaciones con js.
