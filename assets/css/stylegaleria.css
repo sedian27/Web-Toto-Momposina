@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", sans-serif;
+    color: grey;
+    background-image: url('../img/TOTO_web.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .nav {
+    border-bottom: 1px solid grey;
+    background-color: rgba(197, 182, 182, 0.6);
+  }
+  .nav__toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
+  }
+  
+  .close,
+  input[type="checkbox"] {
+    display: none;
+  }
+  .hamburger {
+    margin-top: 0.2rem;
+  }
+  .nav__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 0.6rem;
+  }
+  li {
+    list-style: none;
+    display: none;
+  }
+  li:first-child {
+    margin-right: auto;
+    display: block;
+  }
+  .nav__menu a {
+    text-decoration: none;
+    color: initial;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  #nav__checkbox:checked ~ ul.nav__menu li {
+    display: block;
+  }
+  #nav__checkbox:checked ~ label.nav__toggle .hamburger {
+    display: none;
+  }
+  #nav__checkbox:checked ~ label.nav__toggle .close {
+    display: block;
+  }
+
+  .listhov:hover {
+    background-color: rgb(231, 230, 157, 0.5);
+    padding: 20px;
+    font-size: 22px;
+    color: rgb(207, 82, 82);
+    border-radius: 20px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .nav__toggle {
+      display: none;
+    }
+    .nav__menu {
+      flex-direction: row;
+    }
+    .nav__menu li {
+      display: block;
+    }
+  }
+  
+  .logo {
+    height:100px;
+    text-decoration: none;
+  }
+
+  
+  .album {
+    padding-top: 1%;
+    margin: auto;
+  }
+  
+
+  .image {
+    width: 25rem;
+    height: 15rem;
+    padding: 10px;
+    box-shadow: 5px 10px 10px rgb(53, 41, 41);
+}
+
+  @media only screen and (min-width: 768px) {
+    .image {
+        width: 25rem;
+        height: 15rem;
+        padding: 10px;
+        box-shadow: 5px 10px 10px rgb(53, 41, 41);
+    }
+
+  }

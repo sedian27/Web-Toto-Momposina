@@ -3,22 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/stylegaleria.css" />
     <title>Toto la momposina</title>
   </head>
   <body>
     <header>
-      <nav>
-            <a href="#"><img class="logo" src="./assets/img/toto-logo.png" alt="toto" > </a>
-      <ul> 
-            <li><a href="./noticias.html">Noticias</a></li>
-            <li><a href="./videos.html">Galeria</a></li>
-            <li><a href="./tienda.html">Tienda</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-
-      </nav>
+        <nav class="nav">
+            <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="nav__toggle">
+              <img src="https://img.icons8.com/material-outlined/30/000000/menu--v1.png" class="hamburger" />
+              <img src="https://img.icons8.com/plumpy/30/000000/x.png" class="close" />
+            </label>
+          
+            <ul class="nav__menu">
+              <li>
+                <a href="./index.html">
+                  <img class="logo" src="./assets/img/toto-logo.png" alt="toto"/>
+                </a>
+              </li>
+              <li><a class="listhov" href="./historia.html">Historia</a></li>
+              <li><a class="listhov" href="./noticias.html">Noticias</a></li>
+              <li><a class="listhov" href="./galeria2.html">Galeria</a></li>
+              <li><a class="listhov" href="./contacto.html">Contacto</a></li>
+            </ul>
+          
+          </nav>
         
     </header>
 
