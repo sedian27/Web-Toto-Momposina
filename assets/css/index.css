@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1rem = 10px*/
+  background: url(../img/TOTO_web.jpg) no-repeat center center;
 }
 
 *,
@@ -9,16 +10,270 @@ html {
   box-sizing: inherit;
 }
 
-header {
-  background-color: #ffd74a;
+/* Body */
+body {
+  background: url(../img/TOTO_web.jpg) no-repeat center fixed;
+  height: 100vh;
 }
 
-header img {
+h1 {
+  margin: 0 !important;
+}
+
+/* titulo */
+.titulo {
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .titulo {
+    font-size: 5rem;
+  }
+}
+
+/* Hipervinculos */
+a {
+  text-decoration: none;
+}
+
+/* Imagenes */
+.img-centrada {
+  text-align: center;
+}
+
+/* Cabecera */
+.cabecera {
+  background-color: #fbdfa3;
+}
+
+.cabecera img {
+  width: 8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cabecera {
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+  }
+
+  .cabecera img {
+    width: 12rem;
+  }
+
+  .cabecera a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+/* Contenido de Base */
+.contenido-base {
+  font-size: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contenido img {
+  width: 30rem;
+  border: 1px solid #000000;
+  border-radius: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenido-base {
+    height: 90vh;
+    font-size: 3rem;
+    padding: 10rem;
+  }
+
+  .contenido {
+    width: 50%;
+  }
+
+  .contenido img {
+    width: 50rem;
+  }
+}
+
+/* Contenido Galeria */
+.contenido-galeria .contenido .videos {
+  display: flex;
+  justify-content: space-between;
+  width: 200%;
+}
+
+.contenido-galeria .contenido a {
+  width: 200%;
+  text-align: center;
+  color: blue;
+}
+
+/* Contenido de Contacto */
+
+.contenido-contacto h2 {
+  color: #ffffff;
+  background-color: #4a4af0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.contenido-contacto h2:hover {
+  color: #ffffff;
+  background-color: #0000f5;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+header {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(245, 208, 208, 0.6);
+}
+
+.logo {
   height: 100px;
 }
 
-.content {
-  background: url(../img/TOTO_web.jpg) no-repeat center center;
-  height: 100vh;
-  width: 100vw;
+.album {
+  padding-top: 7%;
+  margin: auto;
+}
+
+.image {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  box-shadow: 5px 10px 10px rgb(53, 41, 41);
+}
+
+nav {
+  text-align: center;
+  margin: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  padding: 18px;
+}
+
+nav ul li {
+  float: left;
+  margin-top: 20px;
+}
+
+nav ul li a {
+  color: rgb(175, 46, 46);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  margin: 50px;
+}
+
+nav ul li a:hover {
+  background-color: #b9c6da;
+}
+
+h1 {
+  margin: 0 !important;
+}
+
+/* titulo */
+.titulo_noticia {
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .titulo_noticia {
+    font-size: 5rem;
+  }
+}
+
+/* Hipervinculos */
+a {
+  text-decoration: none;
+}
+
+/* Imagenes */
+.imagen_centrada {
+  text-align: center;
+}
+
+/* Cabecera */
+.cabecera_noticia {
+  background-color: #fbdfa3;
+}
+
+.cabecera_noticia img {
+  width: 8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .cabecera_noticia {
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+  }
+
+  .cabecera_noticia img {
+    width: 12rem;
+  }
+
+  .cabecera_noticia a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+/* Contenido de Base */
+.contenido_base {
+  font-size: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+
+.contenido_noticia {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contenido_noticia img {
+  width: 30rem;
+  border: 1px solid #000000;
+  border-radius: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenido_base {
+    height: 90vh;
+    font-size: 3rem;
+    padding: 10rem;
+  }
+
+  .contenido_noticia {
+    width: 50%;
+  }
+
+  .contenido_noticia img {
+    width: 50rem;
+  }
 }
