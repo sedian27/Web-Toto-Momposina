@@ -223,7 +223,9 @@ a {
 }
 
 /* Imagenes */
-.imagen_centrada {
+.imagen_noticia {
+  width: 100%;
+  padding: 10px;
   text-align: center;
 }
 
@@ -268,10 +270,13 @@ a {
 
 @media only screen and (min-width: 768px) {
   .contenido_noticia {
-    width: 50%;
+    width: 70%;
   }
 
   .contenido_noticia img {
     width: 50rem;
   }
+}
+.wl {
+  width: 450px;
 }
