@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1rem = 10px*/
-  background: url(../img/TOTO_web.jpg) no-repeat center center;
 }
 
 *,
@@ -11,10 +10,6 @@ html {
 }
 
 /* Body */
-body {
-  background: url(../img/TOTO_web.jpg) no-repeat center fixed;
-  height: 100vh;
-}
 
 h1 {
   margin: 0 !important;
@@ -92,7 +87,6 @@ a {
 
 @media only screen and (min-width: 768px) {
   .contenido-base {
-    height: 90vh;
     font-size: 3rem;
     padding: 10rem;
   }
@@ -107,16 +101,36 @@ a {
 }
 
 /* Contenido Galeria */
+.contenido-galeria {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
 .contenido-galeria .contenido .videos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 200%;
+}
+
+.contenido-galeria .contenido .videos iframe {
+  padding: 1.5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenido-galeria .contenido .videos {
+    width: 200%;
+  }
 }
 
 .contenido-galeria .contenido a {
-  width: 200%;
   text-align: center;
   color: blue;
+}
+
+@media only screen and (min-width: 768px) {
+  .contenido-galeria .contenido a {
+    width: 200%;
+  }
 }
 
 /* Contenido de Contacto */
@@ -240,16 +254,6 @@ a {
     color: #000000;
   }
 }
-
-/* Contenido de Base */
-.contenido_base {
-  font-size: 2rem;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  height: 90vh;
-}
-
 .contenido_noticia {
   display: flex;
   flex-direction: column;
@@ -263,12 +267,6 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
-  .contenido_base {
-    height: 90vh;
-    font-size: 3rem;
-    padding: 10rem;
-  }
-
   .contenido_noticia {
     width: 50%;
   }
